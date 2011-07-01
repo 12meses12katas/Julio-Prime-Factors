@@ -1,0 +1,33 @@
+GENERATE PRIME FACTORS by Uncle Bob
+
+Although quite short, this kata is fascinating in the way it shows how ‘if’ statements
+become ‘while’ statements as the number of test cases increase.  It’s also a
+wonderful example of how algorithms sometimes become simpler as they become
+more general.
+
+I stumbled upon this little kata one evening when my son was in 7th grade.  He
+had just discovered that all numbers can be broken down into a product of primes
+and was interested in exploring this further.  So I wrote a little ruby program, test-
+first, and was stunned by how the algorithm evolved.
+
+I have done this particular kata in Java 5.0.  This should give you a feel for the 
+power and convenience of some of the new features.
+
+=========================================
+
+The Requirements
+
+Write a class named “PrimeFactors” that has one static method: generate.
+The generate method takes an integer argument and returns a List<Integer>.  
+That list contains the prime factors in numerical sequence.
+
+Source: http://butunclebob.com/ArticleS.UncleBob.ThePrimeFactorsKata
+
+Prime Factor Definition: (http://en.wikipedia.org/wiki/Prime_factor)
+
+In number theory, the prime factors of a positive integer are the prime numbers that divide that integer exactly, without leaving a remainder. The process of finding these numbers is called integer factorization, or prime factorization. A prime factor can be visualized by understanding Euclid's geometric position. He saw a whole number as a line segment, which has a smallest line segment greater than 1 that can divide equally into it.
+For a prime factor p of n, the multiplicity of p is the largest exponent a for which pa divides n. The prime factorization of a positive integer is a list of the integer's prime factors, together with their multiplicity. The fundamental theorem of arithmetic says that every positive integer has a unique prime factorization.
+To shorten prime factorization, numbers are often expressed in powers, so
+
+For a positive integer n, the number of prime factors of n and the sum of the prime factors of n (not counting multiplicity) are examples of arithmetic functions of n that are additive but not completely additive.
+
