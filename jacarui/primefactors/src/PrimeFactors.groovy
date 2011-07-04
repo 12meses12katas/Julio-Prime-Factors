@@ -1,6 +1,3 @@
-import java.util.Iterator;
-
-import javax.swing.JComponent.IntVector;
 
 class PrimeFactors {
 
