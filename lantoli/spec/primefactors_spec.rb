@@ -12,7 +12,7 @@ describe PrimeFactors do
     288 => [2,2,2,2,2,3,3],
     24 => [2,2,2,3],
     100 => [2,2,5,5],
-    123456789 => [3,3,3607,3803]  # 16 seconds
+    123456789 => [3,3,3607,3803]  
   }
 
   primeTests.each do | number, factors|
