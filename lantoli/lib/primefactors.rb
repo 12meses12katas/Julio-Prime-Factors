@@ -4,7 +4,7 @@ class PrimeFactors
       factors = []
       limit = Math.sqrt(number).to_i   # performance tip: go up to square root
       candidate = 2
-      while candidate <= limit
+      while candidate <= limit && number > 1
         if candidate.factor_of? number
           factors << candidate
           number /= candidate
