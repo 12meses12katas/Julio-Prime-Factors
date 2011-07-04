@@ -18,7 +18,7 @@ class PrimeFactors
 
 end
 
-class Fixnum
+class Integer
   def factor_of? number
     number % self == 0
   end
