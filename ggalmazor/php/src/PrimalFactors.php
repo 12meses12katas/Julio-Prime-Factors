@@ -18,14 +18,18 @@ class PrimalFactors {
   }
   
   private static function getNextQuotient($q, $n) {
-    if (self::isTheSquareRoot($q, $n))
+    if (self::isGreaterThan($q, self::squareRootOf($n)))
       return $n;
     else
       return self::getNextOddNumber($q);
   }
   
-  private static function isTheSquareRoot($q, $n) {
-    return $q > sqrt($n);
+  private static function isGreaterThan($q, $n) {
+    return $q > $n;
+  }
+  
+  private static function squareRootOf($n) {
+    return sqrt($n);
   }
   
   private static function getNextOddNumber($n) {
