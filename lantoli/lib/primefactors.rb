@@ -8,6 +8,7 @@ class PrimeFactors
         if candidate.factor_of? number
           factors << candidate
           number /= candidate
+          limit = Math.sqrt(number).to_i   # performance tip: go up to square root
         else
           candidate = (candidate==2) ? 3 : candidate + 2 # performance tip: only odd candidates
         end
@@ -16,7 +17,7 @@ class PrimeFactors
       factors
   end
 
-end
+end 
 
 class Integer
   def factor_of? number
