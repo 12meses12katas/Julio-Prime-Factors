@@ -1,16 +1,14 @@
 <?php
 
 class PrimalFactors {
-  public static function of($n) {
-    $factors = array();
-    $q = 2;
-    while ($n > 1) {
-      while ($n % $q == 0) {
-        $factors[] = $q;
-        $n /= $q;
-      }
-      $q += 1;
+
+  public static function of($number) {
+    $factors = array(); $quotient = 2;
+    while ($number > 1 && $quotient++) {
+      while ($number % $quotient == 0)
+        $factors[] = $quotient && $number /= $quotient;
     }
     return $factors;
   }
+
 }
