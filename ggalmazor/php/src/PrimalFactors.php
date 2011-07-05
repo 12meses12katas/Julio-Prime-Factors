@@ -6,11 +6,15 @@ class PrimalFactors {
     $factors = array();
     $quotient = 2;
     while ($number > 1) {
-      while ($number % $quotient == 0)
+      while (self::isFactor($quotient, $number))
         $factors[] = $quotient && $number /= $quotient;
       $quotient = self::getNextQuotient($quotient, $number);
     }
     return $factors;
+  }
+  
+  private static function isFactor($q, $n) {
+    return $n % $q == 0;
   }
   
   private static function getNextQuotient($q, $n) {
