@@ -12,13 +12,10 @@ var PrimeFactors = function() {
                 posibleFactor++;
             }
         }
-
         if (newNumber != 1) {
           output.push(newNumber);
         }
-
         return output;
     }
 }
-
 exports.PrimeFactors = PrimeFactors;
