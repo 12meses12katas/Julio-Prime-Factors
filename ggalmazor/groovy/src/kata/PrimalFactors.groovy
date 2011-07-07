@@ -18,8 +18,7 @@ class PrimalFactors {
 	private static int getNextQuotient(q, n) {
 		if (q.isGreaterThan(n.squareRoot()))
 			return n
-		else 
-			return q.nextOdd()
+		return q.nextOdd()
 	}
 
 	private static addMethodsToBigInteger() {
