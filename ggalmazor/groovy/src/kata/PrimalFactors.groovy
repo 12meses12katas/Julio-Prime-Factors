@@ -22,11 +22,11 @@ class PrimalFactors {
 	}
 
 	private static addMethodsToBigInteger() {
-		BigInteger.metaClass.isFactorOf = { 
-			number -> number % delegate == 0 
+		BigInteger.metaClass.isFactorOf = { number -> 
+			number % delegate == 0 
 		}
-		BigInteger.metaClass.isGreaterThan = { 
-			number -> delegate > number 
+		BigInteger.metaClass.isGreaterThan = { number -> 
+			delegate > number 
 		}
 		BigInteger.metaClass.squareRoot = { 
 			Math.sqrt(delegate) 
