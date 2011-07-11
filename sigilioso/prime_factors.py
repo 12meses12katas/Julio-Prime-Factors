@@ -3,6 +3,7 @@
 class PrimeFactors:
 
     def is_prime(n):
+        if n == 1: return 1
         p = 2
         while n % p != 0:
             p += 1
@@ -10,6 +11,7 @@ class PrimeFactors:
 
     @classmethod
     def generate(cls, n):
+        if n == 1: return [1]
         factors = []
         f = 2
         while n > 1:
@@ -18,7 +20,6 @@ class PrimeFactors:
                 factors.append(f)
             else :
                 n += 1
-
         return factors
 
 
