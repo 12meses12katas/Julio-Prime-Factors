@@ -19,12 +19,7 @@ class PrimeFactors {
 
     private function isFactor($integer, $factor)
     {
-        return PrimeFactors::isDivisible($integer,$factor);
-    }
-
-    private function isDivisible($integer, $factor)
-    {
-        return $integer % $factor == 0;
+	return $integer % $factor == 0;
     }
 
 }
