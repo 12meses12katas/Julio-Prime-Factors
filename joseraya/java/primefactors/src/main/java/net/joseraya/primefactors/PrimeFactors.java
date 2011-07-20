@@ -10,11 +10,11 @@ public class PrimeFactors {
 			throw new IllegalArgumentException("The number " + source + "cannot be decomposed in primes");
 		}
 		List<Integer> result = Collections.list();
-		if (source%2==0) {
+		while (source%2==0) {
 			result.add(2);
 			source = source/2;
 		}
-		if (source%3==0) {
+		while (source%3==0) {
 			result.add(3);
 			source = source/3;
 		}

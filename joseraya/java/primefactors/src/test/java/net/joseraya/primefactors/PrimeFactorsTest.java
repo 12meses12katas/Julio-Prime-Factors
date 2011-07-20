@@ -34,4 +34,12 @@ public class PrimeFactorsTest {
 		result = generate(number);
 		assertEquals(expected, result);
 	}
+	
+	@Test
+	public void primes_should_be_repeated_if_needed() {
+		Integer number = 36;
+		List<Integer> expected = Collections.list(2,2,3,3);
+		result = generate(number);
+		assertEquals(expected, result);
+	}
 }
