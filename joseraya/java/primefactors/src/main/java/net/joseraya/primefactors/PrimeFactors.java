@@ -10,13 +10,13 @@ public class PrimeFactors {
 			throw new IllegalArgumentException("The number " + source + "cannot be decomposed in primes");
 		}
 		List<Integer> result = Collections.list();
-		while (source%2==0) {
-			result.add(2);
-			source = source/2;
-		}
-		while (source%3==0) {
-			result.add(3);
-			source = source/3;
+		int primeToTest = 2;
+		while(primeToTest <= source) {
+			while (source % primeToTest == 0) {
+				result.add(primeToTest);
+				source = source / primeToTest;
+			}
+			primeToTest++;
 		}
 		return result;
 	}
