@@ -13,15 +13,15 @@ public class PrimeFactors {
 		return generatePrimeFactors(source);
 	}
 
-	private static List<Integer> generatePrimeFactors(Integer source) {
+	private static List<Integer> generatePrimeFactors(Integer numberToDecompose) {
 		List<Integer> result = Collections.list();
-		int primeToTest = 2;
-		while(primeToTest <= source) {
-			while (source % primeToTest == 0) {
-				result.add(primeToTest);
-				source = source / primeToTest;
+		int numberToTest = 2;
+		while(numberToTest <= numberToDecompose && numberToDecompose > 0) {
+			while (numberToDecompose % numberToTest == 0) {
+				result.add(numberToTest);
+				numberToDecompose = numberToDecompose / numberToTest;
 			}
-			primeToTest++;
+			numberToTest++;
 		}
 		return result;
 	}
