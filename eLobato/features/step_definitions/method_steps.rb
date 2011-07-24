@@ -9,7 +9,7 @@ When /^I look at PrimeFactors\.rb$/ do
 end
 
 Then /^a method named "([^"]*)" must exist$/ do |arg1|
-  assert PrimeFactors.respond_to?(generate)
+  assert PrimeFactors.respond_to?(:generate)
 end
 
 Given /^the definition of the kata$/ do
@@ -47,4 +47,8 @@ Then /^it must be returning a list of integers$/ do
   #Lists are not available in ruby as closures make them innecessary
   #Array is enough for our purposes here
   assert a.is_a? Array
+  #Not quite there, check if the content of the array is a list of integers
+  a.each do |element| 
+   assert element.is_a? Integer
+  end
 end 
