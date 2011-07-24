@@ -12,6 +12,8 @@ Then /^a list of the prime factors is returned$/ do
 end
  
 Then /^the list is returned in numerical sequence$/ do
-  pending # express the regexp above with the code you wish you had
+  #Copy of the previous test - the result is taken in numerical sequence
+  a = PrimeFactors.generate(100) 
+  assert_equal a, [2,5] 
 end
  
