@@ -1,17 +1,17 @@
+import java.math.* 
 
 class PrimeFactors {
     
-    public def generate(int n){
-        n > 1 ? computeFactorsOf(n) : []
+    public def generate(def n){
+        n == 1 ? []: compute(n)
     }
     
-    private def computeFactorsOf(int n){
+    public def compute(def n){
         def factors = []
         
-        for(def candidate = 2; candidate <= n; candidate++) {
-            while(isFactor(n, candidate)){
-                factors << candidate
-                n /= candidate
+        for(def factor = 2; factor <= n; factor++){
+            for(;isFactor(n, factor); n = (n / factor).toInteger()){
+                factors << factor
             }
         }
         
@@ -19,6 +19,7 @@ class PrimeFactors {
     }
     
     private def isFactor(def n, def factor){
-        n % factor == 0
+        def mod = n % factor
+        mod == 0
     }
 }

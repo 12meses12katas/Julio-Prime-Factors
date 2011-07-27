@@ -2,6 +2,10 @@
 
 ## Log de comentarios
 
+*19/07/2011*
+Segundo intento. Borrar el primero y volver a empezar. A ver si he olvidado algo y reinvento la
+rueda. Uso bucles for en lugar de while's. Queda más corto, pero quizá menos legible.
+
 *12/07/2011*
 Comienzo de la kata. Primera implementación. Tests hasta el numero 30. Echar un vistazo a los tests
 de ggalmanzor, que tiene numeros primos bastante grandes. Mi solucion falla con esos numeros tan
