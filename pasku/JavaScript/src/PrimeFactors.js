@@ -1,4 +1,4 @@
-var PrimeFactors = (function (undefined) {
+var PrimeFactors = (function(undefined) {
 	
   var PrimeFactorsObj = PrimeFactorsObj || {};
 
