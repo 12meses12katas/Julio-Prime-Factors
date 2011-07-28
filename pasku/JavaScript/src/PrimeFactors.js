@@ -5,7 +5,7 @@ var PrimeFactors = (function (undefined) {
   PrimeFactorsObj.generate = function (number){
     var factors = [];
     for (var divisor = 2; number > 1; divisor++)
-      for (; number % divisor === 0; number = number/divisor) {
+      for (; number % divisor === 0; number /= divisor) {
         factors.push(divisor);
       }
     return factors;
