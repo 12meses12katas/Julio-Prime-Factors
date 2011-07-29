@@ -29,7 +29,7 @@ public class PrimeFactorsTest {
 
 	@Test
 	public void a_decomposable_number_should_be_decomposed() {
-		Integer number = 6;
+		Integer number = 3*2;
 		List<Integer> expected = Collections.list(2,3);
 		result = generate(number);
 		assertEquals(expected, result);
@@ -37,7 +37,7 @@ public class PrimeFactorsTest {
 	
 	@Test
 	public void primes_should_be_repeated_if_needed() {
-		Integer number = 180;
+		Integer number = 2*2*3*3*5;
 		List<Integer> expected = Collections.list(2,2,3,3,5);
 		result = generate(number);
 		assertEquals(expected, result);
