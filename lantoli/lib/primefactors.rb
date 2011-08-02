@@ -1,3 +1,5 @@
+require 'mathn'
+
 class PrimeFactors
 
   def self.generate number
@@ -13,7 +15,7 @@ class PrimeFactors
           candidate = (candidate==2) ? 3 : candidate + 2 # performance tip: only odd candidates
         end
       end
-      factors << number unless number <= limit # performance tip
+      factors << number unless number <= limit # performance tip - square root
       factors
   end
 
@@ -23,7 +25,7 @@ class Integer
   def factor_of? number
     number % self == 0
   end
- 
+
   def sqrt
     Math.sqrt(self).to_i
   end
