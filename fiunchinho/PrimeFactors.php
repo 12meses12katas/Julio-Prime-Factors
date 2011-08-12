@@ -1,6 +1,6 @@
 <?php
 /**
- * Description of Bowling: http://butunclebob.com/ArticleS.UncleBob.ThePrimeFactorsKata
+ * Description of PrimeFactors Kata: http://butunclebob.com/ArticleS.UncleBob.ThePrimeFactorsKata
  *
  * @author fiunchinho
  */
